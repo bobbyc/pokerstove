@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 find_package (Threads)
 
-# build the test 
+# build the test
 file(GLOB test_sources *.test.cpp)
 add_executable(peval_tests ${test_sources})
 target_link_libraries(peval_tests peval gtest gtest_main ${CMAKE_THREAD_LIBS_INIT})
